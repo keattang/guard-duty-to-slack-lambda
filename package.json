@@ -1,12 +1,11 @@
 {
-    "name": "expire-iam-access-keys-lambda",
+    "name": "guard-duty-to-slack-lambda",
     "version": "1.0.0",
-    "description": "Lambda to remove AWS IAM access keys when they reach a certain age",
+    "description": "Lambda to send slack notifcations for guard duty findings",
     "main": "src/index.js",
     "author": "keattang",
     "license": "MIT",
     "devDependencies": {
-        "aws-sdk": "^2.432.0",
         "eslint": "^5.16.0",
         "eslint-config-airbnb-base": "^13.1.0",
         "eslint-config-prettier": "^4.1.0",
