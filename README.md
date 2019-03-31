@@ -9,7 +9,8 @@ This is a simple, dependnecy free, lambda function that receives findings from A
 
 ## Setup
 
--   Create a lambda function with the basic execution role and upload this folder as a zip file. You can download it directly from GitHub. Point the handler to `src/index.handler` and extend the timeout to 5 minutes.
+-   Create an incoming slack webhook that points to the channel in which you wish to receive notifications. https://slack.com/apps/A0F7XDUAZ-incoming-webhooks
+-   Create a lambda function with the basic execution role and upload this folder as a zip file. You can download it directly from GitHub. Point the handler to `src/index.handler` and extend the timeout to 5 minutes. Set the `SLACK_WEBHOOK_URL` to the URL that was generated in the previous step.
 -   Create a CloudWatch event rule to forward GuardDuty findings to this lambda. The event pattern should look something like this:
 
 ```
